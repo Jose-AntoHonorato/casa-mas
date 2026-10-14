@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --text-light: #ffffff;
+    --gradient-bg: linear-gradient(135deg, #2c3e50, #3498db);
+}
+        body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f6fa;
+          } 
+     /* Header y Logo */
+    header {
+    background: var(--gradient-bg);
+    padding: 1rem;
+    }
+
+       .header-content {
+       display: flex;
+       align-items: center;
+       max-width: 1200px;
+       margin: 0 auto;
+      }
+
+      .logo {
+      width: 80px;
+      height: auto;
+      margin-right: 2rem;
+     }
+
+     .header-text {
+     flex-grow: 1;
+     text-align: center;
+     }
+
+     .titulo-bienvenida {
+     color: var(--text-light);
+     margin: 0;
+     font-size: 2em;
+     } 
+     .btn:hover {
+    background-color: #c0392b;
+}
+        .formulario {
+            max-width: 600px;
+            margin: 50px auto;
+            border: 1px solid #000;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #000;
+        }
+        .formulario h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            padding: 10px;
+        }
+        header, footer {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Footer */
+footer {
+    background: var(--gradient-bg);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}

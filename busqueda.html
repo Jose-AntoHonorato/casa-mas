@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA+</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="busqueda.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a CASA+ el lugar para tu casa ideal</h1>
+    </header>
+    <div class="formulario">
+        <h2>CASA+</h2>
+        <form action="buscarcasas.php" method="POST">
+            <div class="form-group">
+                <label for="municipio">Municipio:</label>
+                <select id="municipio" name="municipio" class="form-control" onchange="actualizarBarrios();">
+                    <option value=""></option>
+                    <option value="atizapan">Atizapán</option>
+                    <option value="nicolas">Nicolás Romero</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="barrio">Barrio:</label>
+                <select id="barrio" name="barrio" class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tamano">Tamaño:</label>
+                <input type="text" name="tamano" class="form-control" required placeholder="Ingrese en mts2">
+            </div>
+            <div class="form-group">
+                <label for="precio_min">Precio Mínimo:</label>
+                <input type="number" id="precio_min" name="precio_min" class="form-control" placeholder="Ingrese el precio mínimo">
+            </div>
+            <div class="form-group">
+                <label for="precio_max">Precio Máximo:</label>
+                <input type="number" id="precio_max" name="precio_max" class="form-control" placeholder="Ingrese el precio máximo">
+            </div>
+            <div class="form-group">
+                <label for="habitaciones">Número de habitaciones:</label>
+                <input type="number" id="habitaciones" name="habitaciones" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="amueblada">Amueblada:</label>
+                <select id="amueblada" name="amueblada" class="form-control" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </form>
+    </div>
+    <nav>
+        <ul>
+            <a href="inicio.html" class="btn">Inicio</a>
+        </ul>
+    </nav>
+    <footer>
+        <p>© 2024 Mi Página Web</p>
+    </footer>
+    <script src="mostrarbarrios.js"></script>
+</body>
+</html>
+

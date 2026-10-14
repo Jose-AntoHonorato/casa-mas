@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="iniciosesion.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a CASA+ el lugar para tu casa ideal</h1>
+    </header>
+    <div class="login-form">
+        <h2>CASA+</h2>
+        <form action="Validar.php" method="POST">
+            <label>Usuario</label>
+            <input type="text" name="usuario" required maxlength="10" placeholder="Escriba su usuario">
+            <label>Contraseña</label>
+            <input type="password" name="pass" required maxlength="10" placeholder="Escriba su contraseña">
+            <input type="submit" value="Enviar">
+        </form>
+        <form action="registrarusuario.html" method="POST">
+            <input type="submit" value="Registrar nuevo usuario">
+        </form>
+		<a href="documentacion.pdf">Ver documentación de la BD</a>
+    </div>
+    <nav>
+        <ul>
+            <a href="inicio.html" class="btn">Inicio</a>
+        </ul>
+    </nav>
+    <footer>
+        <p>© 2024 Mi Página Web</p>
+    </footer>
+</body>
+</html>
+

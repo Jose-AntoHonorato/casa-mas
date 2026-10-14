@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --text-light: #ffffff;
+    --gradient-bg: linear-gradient(135deg, #2c3e50, #3498db);
+    --border-color: #dcdcdc; /* Color del borde */
+    --button-primary: #3498db; /* Color para botones primarios */
+    --button-secondary: #95a5a6; /* Color para botones secundarios */
+    --text-dark: #2c3e50; /* Color oscuro para texto */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+}
+
+/* Header */
+header {
+    background: var(--gradient-bg);
+    padding: 1rem;
+}
+
+header h1 {
+    color: var(--text-light);
+    text-align: center;
+    font-size: 2.2rem;
+}
+/* Contenedor principal */
+.container {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.register-form {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+.register-form form input[type="text"], .register-form form input[type="password"], .register-form form input[type="submit"] {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.register-form form input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Botones */
+.btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--accent-color);
+}
+/* Footer */
+footer {
+    background: var(--gradient-bg);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 576px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .titulo-bienvenida {
+        font-size: 1.8rem;
+    }
+}

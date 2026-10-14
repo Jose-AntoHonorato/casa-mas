@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --text-light: #ffffff;
+    --gradient-bg: linear-gradient(135deg, #2c3e50, #3498db);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+}
+
+/* Header y Logo */
+header {
+    background: var(--gradient-bg);
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.titulo-bienvenida {
+    color: var(--text-light);
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navegación */
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+nav ul li a, nav ul li button {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    color: var(--accent-color);
+}
+
+/* Carrusel mejorado */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.carousel-control-prev { left: 0; }
+.carousel-control-next { right: 0; }
+
+/* Contenedores y secciones */
+.contenedor {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destacadas {
+    background: linear-gradient(to right, #fff, #f8f9fa);
+    border-left: 4px solid var(--accent-color);
+}
+
+.propiedad {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.propiedad:hover {
+    transform: translateY(-5px);
+}
+
+.propiedad img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.propiedad h3 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+/* Testimonios */
+blockquote {
+    border-left: 4px solid var(--accent-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Botón de llamada a la acción */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background: var(--gradient-bg);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}

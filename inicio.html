@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA+</title>
+    <link rel="stylesheet" href="diseño.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="th-3065677334.jpeg" alt="Logo" class="logo">
+            <div class="header-text">
+                <h1 class="titulo-bienvenida">Bienvenido a CASA+ el lugar para tu casa ideal</h1>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="busqueda.html"><i class="fas fa-search"></i> Búsqueda</a></li>
+            <li><a href="publicarcasa.html" id="enlacePublicacion"><i class="fas fa-home"></i> Publicación de Casa</a></li>
+            <li><a href="iniciosesion.html" id="iniciarSesion"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+            <li><button id="cerrarSesion" style="display: none;"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="th-3065677334.jpeg" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="OIP.jpeg" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="OIP (1).jpeg" alt="Imagen 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+            <div class="carousel-indicators">
+                <button data-target="#carousel" data-slide-to="0" class="active"></button>
+                <button data-target="#carousel" data-slide-to="1"></button>
+                <button data-target="#carousel" data-slide-to="2"></button>
+            </div>
+        </div>
+    </main>
+    
+    <section class="explicacion">
+        <div class="contenedor destacadas">
+            <h1>¿Por qué elegir nuestro sitio para la búsqueda de casas?</h1>
+            <div class="justificacion">
+                <h2>Nuestro modelo de interacción elimina la necesidad de intermediarios como las inmobiliarias. El trato es directo, del dueño de la casa a usted y viceversa.</h2>
+            </div>
+        </div>  
+    </section>
+    
+    <section class="destacadas">
+        <div class="contenedor destacadas">
+            <h2>Propiedades Destacadas</h2>
+            <div class="propiedad">
+                <img src="centro.jpeg" alt="Propiedad 1">
+                <h3>Casa en el Centro</h3>
+                <p>3 habitaciones, 2 baños - $1200/mes</p>
+                <a href="detallepropiedad1.html">Ver más</a>
+            </div>
+            <div class="propiedad">
+                <img src="playa.jpeg" alt="Propiedad 2">
+                <h3>Departamento en la Playa</h3>
+                <p>2 habitaciones, 1 baño - $900/mes</p>
+                <a href="detallepropiedad2.html">Ver más</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="guia-alquiler">
+        <div class="contenedor destacadas">
+            <h2>Cómo Funciona</h2>
+            <ol>
+                <li>Busca propiedades usando nuestros filtros.</li>
+                <li>Contacta a los propietarios directamente.</li>
+                <li>Visita las propiedades que te interesan.</li>
+                <li>Negocia el precio y firma el contrato.</li>
+            </ol>   
+        </div>
+    </section>
+
+    <section class="articulos-recomendados">
+        <div class="contenedor destacadas">
+            <h2>Artículos Recomendados</h2>
+            <div class="articulo">
+                <h3><a href="consejos.html">Consejos para Rentar</a></h3>
+                <p>Consejos útiles para que encuentres la casa ideal sin complicaciones.</p>
+            </div>
+            <div class="articulo">
+                <h3><a href="tendencias.html">Tendencias del Mercado</a></h3>
+                <p>Entérate de las últimas tendencias en el mercado de alquiler.</p>
+            </div>
+        </div> 
+    </section>
+
+    <section class="testimonios">
+        <div class="contenedor destacadas">
+            <h2>Lo que Dicen Nuestros Usuarios</h2>
+            <blockquote>
+                "Encontré mi casa ideal gracias a CASA+. ¡Recomiendo 100%!"
+                <footer>- Juan Pérez</footer>
+            </blockquote>
+            <blockquote>
+                "El proceso de alquiler fue muy sencillo y directo."
+                <footer>- Ana Gómez</footer>
+            </blockquote>  
+        </div>
+    </section>
+
+    <section class="llamada-accion">
+        <div class="contenedor destacadas">
+            <h2>¡Comienza Tu Búsqueda Hoy!</h2>
+            <p>Regístrate para recibir alertas de nuevas propiedades y ofertas especiales.</p>
+            <a href="registrarusuario.html" class="btn">Regístrate Ahora</a>   
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Mi Página Web</p>
+    </footer>
+
+    <!-- Enlaces a los scripts -->
+    <script src="jsbotones.js"></script>
+    <script src="carrucel.js"></script>
+</body>
+</html>

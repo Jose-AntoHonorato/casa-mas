@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="nuevousuario.css">
+</head>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a CASA+ el lugar para tu casa ideal</h1>
+    </header>
+    <div class="register-form">
+        <h2>Registro de usuario</h2>
+        <form action="nuevousuario.php" method="POST">
+            <label>Usuario</label>
+            <input type="text" name="newUser" required maxlength="10" placeholder="Escriba el nombre del nuevo usuario">
+            <label>Contraseña</label>
+            <input type="password" name="newPass" required maxlength="10" placeholder="Escriba la nueva contraseña">
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Mi Página Web</p>
+    </footer>
+</body>
+</html>
+
